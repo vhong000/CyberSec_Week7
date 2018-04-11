@@ -4,6 +4,7 @@
 The XSS exploit that I used in the project is the __Authenticated Shortcode Tags XSS__. This XSS exploit was tested in version 4.2 and fixed in version 4.7.2. 
 
 ### Gif tutorial
+<img src='https://raw.githubusercontent.com/vhong000/CyberSec_Week7/master/xss-exploit.gif'/>
 
 ### To recreate
 1. As an admin, post a comment containing
